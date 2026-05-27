@@ -49,7 +49,6 @@ graph TD
     Gestor --> UC4(Gerar Relatório Ambiental e Compensação)
 
     classDiagram
-    direction QT
     class Veiculo {
         -String placa
         -String modelo
