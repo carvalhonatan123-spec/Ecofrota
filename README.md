@@ -42,16 +42,11 @@ O EcoFrota gerencia o impacto ambiental de frotas, monitorando o consumo de comb
 
 ### Diagrama de Casos de Uso
 ```mermaid
-useCaseDiagram
-    actor Gestor as "Gestor da Frota"
-    usecase UC1 as "Cadastrar Veículo"
-    usecase UC2 as "Cadastrar Motorista"
-    usecase UC3 as "Registrar Viagem"
-    usecase UC4 as "Gerar Relatório Ambiental e Compensação"
-    Gestor --> UC1
-    Gestor --> UC2
-    Gestor --> UC3
-    Gestor --> UC4
+graph TD
+    Gestor[Gestor da Frota] --> UC1(Cadastrar Veículo)
+    Gestor --> UC2(Cadastrar Motorista)
+    Gestor --> UC3(Registrar Viagem)
+    Gestor --> UC4(Gerar Relatório Ambiental e Compensação)
 
     classDiagram
     direction QT
